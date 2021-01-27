@@ -68,5 +68,5 @@ description: >-
 | St. Andrews Secondary School | Singapore | GCE 'O' Levels |
 | Catholic Junior College | Singapore | GCE 'A' Levels |
 | National University of Singapore - Faculty of Science | Singapore | - |
-| National University of Singapore - School of Computing | Singapore |  |
+| National University of Singapore - School of Computing | Singapore | BSc. Computing |
 
