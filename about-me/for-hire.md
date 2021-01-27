@@ -1,7 +1,7 @@
 ---
 description: >-
   If you're interested in enlisting my services and need something to send your
-  boss/HR department, you're where you need to b
+  boss/HR department, you're where you need to be
 ---
 
 # Want to work with me?
@@ -69,4 +69,8 @@ description: >-
 | Catholic Junior College | Singapore | GCE 'A' Levels |
 | National University of Singapore - Faculty of Science | Singapore | - |
 | National University of Singapore - School of Computing | Singapore | BSc. Computing |
+
+## Contact
+
+Create an issue on this repository and we can discuss 😊
 
