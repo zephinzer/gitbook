@@ -72,5 +72,5 @@ description: >-
 
 ## Contact
 
-Create an issue on this repository and we can discuss 😊
+[Create an issue on this repository](https://github.com/zephinzer/gitbook/issues/new) and we can discuss 😊
 
