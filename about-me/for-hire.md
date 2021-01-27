@@ -21,6 +21,7 @@ description: >-
 | Platform | DigitalOcean | 2014-_present_ |
 | Programming Language | Javascript | 2012-_present_ |
 | Programming Language | Golang | 2018-_present_ |
+| SDLC | Agile Scrum | 2016-_present_ |
 | Soft Skills | Ontological Coaching | 2020-_present_ |
 | Programming Language | Typescript | 2018-2019 |
 | Programming Language | PHP | 2012-2015 |
