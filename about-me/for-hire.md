@@ -1,12 +1,30 @@
 ---
-description: If you're interested in enlisting my services
+description: >-
+  If you're interested in enlisting my services and need something to send your
+  boss/HR department, you're where you need to b
 ---
 
-# For hire
+# Want to work with me?
 
-A traditionally formatted resume can be found at:
+> A traditionally formatted resume can be found at:
 
 {% embed url="https://gitlab.com/joeir/el-curriculum" %}
+
+## Knowledge, Skills, and Abilities
+
+| Type | What | When |
+| :--- | :--- | :--- |
+| Software | Kubernetes | 2017-_present_ |
+| Software | Docker | 2017-_present_ |
+| Software | Gitlab | 2016-_present_ |
+| Platform | AWS | 2016-_present_ |
+| Platform | DigitalOcean | 2014-_present_ |
+| Programming Language | Javascript | 2012-_present_ |
+| Programming Language | Golang | 2018-_present_ |
+| Soft Skills | Ontological Coaching | 2020-_present_ |
+| Programming Language | Typescript | 2018-2019 |
+| Programming Language | PHP | 2012-2015 |
+| Programming Language | C++ | 2012-2015 |
 
 ## Professionally
 
@@ -31,6 +49,12 @@ A traditionally formatted resume can be found at:
 ### Mooziq \(Mooziq Pte Ltd\)
 
 #### CTO for the Mooziq Platform
+
+* Founded a platform for providing local musicians in Singapore with alternative streams of revenue
+* Basically the underpaid technical + product guy who did everything: setting up IT infrastructure and ensuring compliance, establishing use of technology in communication and documentation, provisioning and maintaining application infrastructure, developing the customer-facing product, and running online marketing campaigns
+* Also did some business functions
+* Technologies involved: Zoho, Box, Slack, Digital Ocean, AngularJS, PHP, Node.js, MySQL, Google Analytics
+* Skills involved: IT, software engineering, contract creation, deal negotiations
 
 ### NUS Human Computer Interaction Lab
 
