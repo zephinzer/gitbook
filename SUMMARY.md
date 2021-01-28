@@ -14,9 +14,9 @@
   * [1/ Kubernetes in 5 Minutes](code/untitled/1-kubernetes-in-5-minutes.md)
   * [2/ Setting up Kubernetes locally](code/untitled/2-setting-up-kubernetes-locally.md)
 
-## Ontological Coaching <a id="coaching"></a>
+## On Growing People <a id="coaching"></a>
 
-* [Overview](coaching/overview.md)
+* [Ontological Coaching](coaching/overview.md)
 
 ## About Me
 
