@@ -14,6 +14,8 @@
 * [Kubernetes](code/untitled/README.md)
   * [1/ Kubernetes in 5 Minutes](code/untitled/1-kubernetes-in-5-minutes.md)
   * [2/ Setting up Kubernetes locally](code/untitled/2-setting-up-kubernetes-locally.md)
+  * [3/ Handling long-running workloads](code/untitled/3-handling-long-running-workloads.md)
+  * [4/ Handling run-once workloads](code/untitled/4-handling-run-once-workloads.md)
 
 ## On Growing People <a id="coaching"></a>
 
