@@ -8,6 +8,7 @@
   * [Visual Studio Code/Codium](code/development-environment/visual-studio-code-codium.md)
   * [GPG Keys](code/development-environment/gpg-keys.md)
   * [Public Key Infrastructure \(PKI\)](code/development-environment/public-key-infrastructure-pki.md)
+* [Code Logistics](code/code-logistics.md)
 * [Golang](code/golang.md)
 * [Databases](code/databases/README.md)
   * [Cassandra](code/databases/cassandra.md)
