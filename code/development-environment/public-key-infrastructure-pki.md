@@ -1,3 +1,10 @@
+---
+description: >-
+  This page describes how to set up your SSH keys which are used to authenticate
+  with code repositories to contribute code or with remote machines to deploy
+  software
+---
+
 # Public Key Infrastructure \(PKI\)
 
 ## Create an SSH key-pair

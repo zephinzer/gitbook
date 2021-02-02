@@ -1,3 +1,7 @@
+---
+description: My choice of poison for my IDE
+---
+
 # Visual Studio Code/Codium
 
 ## Known Codium Issues

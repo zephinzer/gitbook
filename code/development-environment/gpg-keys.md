@@ -1,3 +1,10 @@
+---
+description: >-
+  This page describes setting up identification details which can be used to
+  verify code was written by you or software was released by you. GPG keys are
+  used to sign code commits or code releases
+---
+
 # GPG Keys
 
 ## Generating a new key
