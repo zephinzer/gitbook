@@ -6,7 +6,7 @@ description: One-pager for Go
 
 ## TL;DR
 
-Go \(or Golang\) is a strongly-typed programming language with C-styled semantics
+Go \(or Golang\) is a strongly-typed programming language with C-styled semantics created by engineers from Google for server-side applications
 
 ### Why use it
 
