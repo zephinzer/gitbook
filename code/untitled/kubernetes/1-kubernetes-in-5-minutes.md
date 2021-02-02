@@ -73,7 +73,7 @@ They said a picture is worth a thousand words. So here’s some diagrams to visu
 
 ### An HTTP-based API server <a id="c9c3"></a>
 
-![](../../.gitbook/assets/image%20%281%29.png)
+![](../../../.gitbook/assets/image%20%281%29.png)
 
 ### A periodic job <a id="c929"></a>
 
