@@ -21,6 +21,7 @@
 ## On Growing People <a id="coaching"></a>
 
 * [Ontological Coaching](coaching/overview.md)
+* [Speech Acts](coaching/speech-acts.md)
 
 ## About Me
 
