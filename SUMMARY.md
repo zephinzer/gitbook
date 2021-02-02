@@ -4,6 +4,8 @@
 
 ## On Creating Software <a id="code"></a>
 
+* [Development Methodologies](code/development-methodologies.md)
+* [Design](code/design.md)
 * [Development Environments](code/development-environment/README.md)
   * [Visual Studio Code/Codium](code/development-environment/visual-studio-code-codium.md)
   * [GPG Keys](code/development-environment/gpg-keys.md)
@@ -17,13 +19,14 @@
   * [JSON](code/languages-formats/json.md)
   * [YAML](code/languages-formats/yaml.md)
 * [Code Logistics](code/code-logistics.md)
-* [Databases](code/databases/README.md)
+* [Data Persistence](code/databases/README.md)
   * [Cassandra](code/databases/cassandra.md)
-* [Kubernetes](code/untitled/README.md)
+* [Deployment Platforms](code/untitled/README.md)
   * [1/ Kubernetes in 5 Minutes](code/untitled/1-kubernetes-in-5-minutes.md)
   * [2/ Setting up Kubernetes locally](code/untitled/2-setting-up-kubernetes-locally.md)
   * [3/ Handling long-running workloads](code/untitled/3-handling-long-running-workloads.md)
   * [4/ Handling run-once workloads](code/untitled/4-handling-run-once-workloads.md)
+* [System Observability](code/system-observability.md)
 
 ## On Growing People <a id="coaching"></a>
 
