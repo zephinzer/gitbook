@@ -1,5 +1,10 @@
 # Books & Other Resources
 
+## Apps
+
+* Calm
+* Headspace
+
 ## Books
 
 * [Language and the Pursuit of Happiness](https://www.goodreads.com/book/show/291094.Language_and_the_Pursuit_of_Happiness) by Chalmers Brothers
