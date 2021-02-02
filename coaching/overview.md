@@ -20,5 +20,5 @@ The Body-Emotion-Language \(BEL\) model is a broad categorisation of how an obse
 * **Emotion** refers to mental sensations that drive action
 * **Language** refers to linguistic expressions
 
-An understanding of this model allows a coach to better understand a coachee's experience of an event, their response to that event, and how action might be designed.
+An understanding of this model allows a coach to better understand a coachee's experience of an event, their response to that event, and how action might be designed
 

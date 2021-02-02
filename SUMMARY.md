@@ -22,6 +22,7 @@
 
 * [Ontological Coaching](coaching/overview.md)
 * [Speech Acts](coaching/speech-acts.md)
+* [Books & Other Resources](coaching/books-and-other-resources.md)
 
 ## About Me
 
