@@ -5,7 +5,7 @@ description: >-
   software
 ---
 
-# Public Key Infrastructure \(PKI\)
+# Public Key Infrastructure \(PKI\) Setup & Usage
 
 ## Create an SSH key-pair
 
