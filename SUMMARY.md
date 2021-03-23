@@ -26,16 +26,14 @@
 * [Data Persistence](code/databases/README.md)
   * [Cassandra](code/databases/cassandra.md)
 * [Software Architecture](code/software-architecture.md)
-* [Deployment](code/untitled/README.md)
-  * [Digital Ocean](code/untitled/digital-ocean.md)
-  * [Kubernetes](code/untitled/kubernetes/README.md)
-    * [Resource Cheatsheet](code/untitled/kubernetes/resource-cheatsheet.md)
-    * [1/ Kubernetes in 5 Minutes](code/untitled/kubernetes/1-kubernetes-in-5-minutes.md)
-    * [2/ Setting up Kubernetes locally](code/untitled/kubernetes/2-setting-up-kubernetes-locally.md)
-    * [3/ Handling long-running workloads](code/untitled/kubernetes/3-handling-long-running-workloads.md)
-    * [4/ Handling run-once workloads](code/untitled/kubernetes/4-handling-run-once-workloads.md)
 * [System Observability](code/system-observability.md)
 * [Cool Tools](code/cool-tools.md)
+* [Kubernetes](code/kubernetes/README.md)
+  * [Resource Cheatsheet](code/kubernetes/resource-cheatsheet.md)
+  * [1/ Kubernetes in 5 Minutes](code/kubernetes/1-kubernetes-in-5-minutes.md)
+  * [2/ Setting up Kubernetes locally](code/kubernetes/2-setting-up-kubernetes-locally.md)
+  * [3/ Handling long-running workloads](code/kubernetes/3-handling-long-running-workloads.md)
+  * [4/ Handling run-once workloads](code/kubernetes/4-handling-run-once-workloads.md)
 
 ## On Growing People <a id="coaching"></a>
 
