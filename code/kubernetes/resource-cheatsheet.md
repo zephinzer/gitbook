@@ -54,7 +54,9 @@ spec:
         image: __docker__/__path__:__tag__
         imagePullPolicy: Never
         ports:
-        - containerPort: 8000
+        - name: http
+          containerPort: 8000
+          protocol: TCP
         resources:
           limits:
             memory: 25Mi
