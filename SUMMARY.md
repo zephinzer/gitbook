@@ -4,7 +4,7 @@
 
 ## On Creating Software <a id="code"></a>
 
-* [Development Methodologies](code/development-methodologies.md)
+* [Product](code/product.md)
 * [Design](code/design.md)
 * [Development Environments](code/development-environment/README.md)
   * [Introduction](code/development-environment/introduction.md)
@@ -35,6 +35,7 @@
     * [3/ Handling long-running workloads](code/untitled/kubernetes/3-handling-long-running-workloads.md)
     * [4/ Handling run-once workloads](code/untitled/kubernetes/4-handling-run-once-workloads.md)
 * [System Observability](code/system-observability.md)
+* [Cool Tools](code/cool-tools.md)
 
 ## On Growing People <a id="coaching"></a>
 
