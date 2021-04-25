@@ -5,7 +5,7 @@ description: >-
   used to sign code commits or code releases
 ---
 
-# GPG Keys Setup & Usage
+# GPG Setup & Usage
 
 ## Generating a new key
 

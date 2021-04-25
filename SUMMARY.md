@@ -7,6 +7,7 @@
 * [Docker Compose Services](docker-compose-cheatsheet/docker-compose-services.md)
 * [Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)
 * [Git Commands](docker-compose-cheatsheet/git-commands.md)
+* [GPG Setup & Usage](docker-compose-cheatsheet/gpg-keys.md)
 
 ## Useful Tools
 
@@ -35,7 +36,6 @@
 * [Development Environments](code/development-environment/README.md)
   * [Introduction](code/development-environment/introduction.md)
   * [Visual Studio Code/Codium](code/development-environment/visual-studio-code-codium.md)
-  * [GPG Keys Setup & Usage](code/development-environment/gpg-keys.md)
   * [Public Key Infrastructure \(PKI\) Setup & Usage](code/development-environment/public-key-infrastructure-pki.md)
 * [Patterns](code/patterns/README.md)
   * [API Authentication](code/patterns/api-authentication.md)
