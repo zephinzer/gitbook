@@ -192,9 +192,9 @@ git rebase -i HEAD~5
 
 #### Squashing till origin/master/HEAD <a id="squashing-till-originmasterhead"></a>
 
-Why
-
-* I have made X number of commits to my branch and want to squash/rebase my commits within my branch so that a rebase with master will be cleaner
+{% hint style="info" %}
+I have made X number of commits to my branch and want to squash/rebase my commits within my branch so that a rebase with master will be cleaner
+{% endhint %}
 
 ```text
 git rebase -i HEAD~$(git log --oneline master..HEAD | wc -l);
@@ -202,9 +202,9 @@ git rebase -i HEAD~$(git log --oneline master..HEAD | wc -l);
 
 ### Uncommit last commit <a id="uncommit-last-commit"></a>
 
-Why
-
-* I would like to reverse the last commit but leave changes I made intact
+{% hint style="info" %}
+I would like to reverse the last commit but leave changes I made intact
+{% endhint %}
 
 ```text
 # this will leave the committed files as staged
@@ -216,9 +216,9 @@ git reset HEAD^
 
 ### Reverting a commit <a id="reverting-a-commit"></a>
 
-Why
-
-* I would like to create a commit that reverses the changes in a certain commit with hash `${COMMIT_HASH}`
+{% hint style="info" %}
+I would like to create a commit that reverses the changes in a certain commit with hash `${COMMIT_HASH}`
+{% endhint %}
 
 ```text
 # use `git log` to find the commit hash of the commit you wish to undo the effects of
@@ -229,9 +229,9 @@ git revert ${COMMIT_HASH}
 
 ### Pushing <a id="pushing"></a>
 
-Why
-
-* I would like push all committed changes from my computer to the remote
+{% hint style="info" %}
+I would like push all committed changes from my computer to the remote
+{% endhint %}
 
 ```text
 git push
@@ -239,9 +239,9 @@ git push
 
 ### Force Pushing <a id="force-pushing"></a>
 
-Why
-
-* I have modified a commit locally and am unable to push normally to the remote since I rewrote history \(**WARNING**: this will erase any changes others may have made between when the original commit was made, and your current commits\)
+{% hint style="info" %}
+I have modified a commit locally and am unable to push normally to the remote since I rewrote history \(**WARNING**: this will erase any changes others may have made between when the original commit was made, and your current commits\)
+{% endhint %}
 
 ```text
 git push -f
@@ -251,9 +251,9 @@ git push -f
 
 ### View all current changes <a id="view-all-current-changes"></a>
 
-Why
-
-* I would like to see what files have been staged
+{% hint style="info" %}
+I would like to see what files have been staged
+{% endhint %}
 
 ```text
 git status
@@ -261,10 +261,10 @@ git status
 
 ### View commit history <a id="view-commit-history"></a>
 
-Why
-
+{% hint style="info" %}
 * I want to do an interactive rebase \(squashing\) and I would like to see which commit I should rebase up till
 * I want to see what changes have been made by other team members/developers
+{% endhint %}
 
 ```text
 # interactive browsing of git commits
@@ -276,9 +276,9 @@ git log -n 5
 
 ### View difference between commits <a id="view-difference-between-commits"></a>
 
-Why
-
-* I would like to check out what changes have been made between two commits
+{% hint style="info" %}
+I would like to check out what changes have been made between two commits
+{% endhint %}
 
 ```text
 # view file changes from HEAD to ${COMMIT_HASH}
@@ -289,9 +289,9 @@ git diff HEAD ${COMMIT_HASH}
 
 ### View the Git configuration <a id="view-the-git-configuration"></a>
 
-Why
-
-* I would like to see who am I committing code as
+{% hint style="info" %}
+I would like to see who am I committing code as
+{% endhint %}
 
 ```text
 git config -l
@@ -299,9 +299,9 @@ git config -l
 
 ### Check which branch you're on <a id="check-which-branch-youre-on"></a>
 
-Why
-
-* I would like to confirm which branch I am on
+{% hint style="info" %}
+I would like to confirm which branch I am on
+{% endhint %}
 
 ```text
 git branch
@@ -332,9 +332,9 @@ git check-ignore -v *;
 
 ### Creating a new branch from an existing one <a id="creating-a-new-branch-from-an-existing-one"></a>
 
-Why
-
-* I would like to create a new branch based on the current one I'm on
+{% hint style="info" %}
+I would like to create a new branch based on the current one I'm on
+{% endhint %}
 
 ```text
 git checkout $SOURCE_BRANCH_SLUG;
@@ -343,17 +343,29 @@ git checkout -b $NEW_BRANCH_SLUG;
 
 ### Deleting a local branch <a id="deleting-a-local-branch"></a>
 
+{% hint style="info" %}
+I would like to delete a local branch so that `git branch -a` is less messy
+{% endhint %}
+
 ```text
 git branch -D $BRANCH_SLUG;
 ```
 
 ### Deleting a remote branch <a id="deleting-a-remote-branch"></a>
 
+{% hint style="info" %}
+I have deleted a local branch and want to delete the pushed branch too
+{% endhint %}
+
 ```text
 git push origin --delete $BRANCH_SLUG;
 ```
 
 ### Deleting local remote branches that have been deleted remotely <a id="deleting-local-remote-branches-that-have-been-deleted-remotely"></a>
+
+{% hint style="info" %}
+Someone else deleted a remote branch and I don't want it locally
+{% endhint %}
 
 ```text
 git remote update origin --prune;
