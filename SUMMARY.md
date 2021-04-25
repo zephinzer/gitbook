@@ -6,6 +6,7 @@
 
 * [Docker Compose Services](docker-compose-cheatsheet/docker-compose-services.md)
 * [Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)
+* [Git Commands](docker-compose-cheatsheet/git-commands.md)
 
 ## On Growing People <a id="coaching"></a>
 
