@@ -2,6 +2,23 @@
 
 * [Hello](README.md)
 
+## Cheatsheets <a id="docker-compose-cheatsheet"></a>
+
+* [Docker Compose Services](docker-compose-cheatsheet/docker-compose-services.md)
+* [Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)
+
+## On Growing People <a id="coaching"></a>
+
+* [Ontological Coaching](coaching/overview.md)
+* [Organization Development \(OD\)](coaching/organization-development-od.md)
+* [Speech Acts](coaching/speech-acts.md)
+* [Books & Other Resources](coaching/books-and-other-resources.md)
+
+## About Me
+
+* [Want to work with me?](about-me/for-hire.md)
+* [How to work with me](about-me/how-to-work-with-me.md)
+
 ## On Creating Software <a id="code"></a>
 
 * [Product](code/product.md)
@@ -34,16 +51,4 @@
   * [2/ Setting up Kubernetes locally](code/kubernetes/2-setting-up-kubernetes-locally.md)
   * [3/ Handling long-running workloads](code/kubernetes/3-handling-long-running-workloads.md)
   * [4/ Handling run-once workloads](code/kubernetes/4-handling-run-once-workloads.md)
-
-## On Growing People <a id="coaching"></a>
-
-* [Ontological Coaching](coaching/overview.md)
-* [Organization Development \(OD\)](coaching/organization-development-od.md)
-* [Speech Acts](coaching/speech-acts.md)
-* [Books & Other Resources](coaching/books-and-other-resources.md)
-
-## About Me
-
-* [Want to work with me?](about-me/for-hire.md)
-* [How to work with me](about-me/how-to-work-with-me.md)
 
