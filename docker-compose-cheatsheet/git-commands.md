@@ -40,9 +40,9 @@ git remote add origin ssh://git@github.com/zephinzer/blog.joeir.net
 
 ### Update the Git remote <a id="update-the-git-remote"></a>
 
-Why
-
-* I would like to update the URL for my remote named `origin` in my repository.
+{% hint style="info" %}
+I would like to update the URL for my remote named `origin` in my repository.
+{% endhint %}
 
 ```text
 git remote set-url origin ssh://git@github.com/zephinzer/blog.joeir.net
@@ -54,9 +54,9 @@ git remote set-url origin ssh://git@github.com/zephinzer/blog.joeir.net
 
 Fetching retrieves the changes but **does not** merge the changes with your local copy.
 
-Why
-
+{% hint style="info" %}
 I would like to get updates from the remote but I don't want to update my code yet.
+{% endhint %}
 
 ```text
 git fetch
@@ -66,9 +66,9 @@ git fetch
 
 Merging takes the remote changes that have been fetched from the remote and merges them with your local copy.
 
-Why
-
+{% hint style="info" %}
 I have reviewed the changes I retrieved from the remote and I want to update my local code to match the remote's copy now.
+{% endhint %}
 
 ```text
 git merge HEAD
@@ -78,9 +78,9 @@ git merge HEAD
 
 Pulling basically does a fetch and merge.
 
-Why
-
+{% hint style="info" %}
 I would like to update my code so that it is the same as the remote's.
+{% endhint %}
 
 ```text
 git pull
@@ -90,9 +90,9 @@ git pull
 
 Pulling with rebase does a fetch, but before merging in the remote changes, it rolls back to a state before all remote changes were made, applies the remote changes, and then applies your local changes.
 
-Why
-
+{% hint style="info" %}
 I would like to update my code by placing whatever's from the remote before my current changes so that it is the same as the remote's and I don't have a merge commit.
+{% endhint %}
 
 ```text
 git pull -r
@@ -100,9 +100,9 @@ git pull -r
 
 ### Rebase <a id="rebase"></a>
 
-Why
-
-* I would like to pull in changes from another branch that's available locally and place those changes before the changes I've committed.
+{% hint style="info" %}
+I would like to pull in changes from another branch that's available locally and place those changes before the changes I've committed.
+{% endhint %}
 
 ```text
 # assuming we are on branch feature_x pulling in updates from master
@@ -113,9 +113,9 @@ git rebase master
 
 ### Stashing <a id="stashing"></a>
 
-Why
-
-* I would like to temporarily store my unstaged changes so that I can pull in the latest updates from the remote.
+{% hint style="info" %}
+I would like to temporarily store my unstaged changes so that I can pull in the latest updates from the remote.
+{% endhint %}
 
 ```text
 # put all unstaged changes into a stash
@@ -130,9 +130,9 @@ git stash pop
 
 ### Staging <a id="staging"></a>
 
-Why
-
-* I would like to add file\(s\) that will be 'saved' during a commit.
+{% hint style="info" %}
+I would like to add file\(s\) that will be 'saved' during a commit.
+{% endhint %}
 
 ```text
 # to stage all changes, run this from project root
@@ -144,9 +144,9 @@ git add ./path/to/changed_file
 
 ### Commiting <a id="commiting"></a>
 
-Why
-
-* I would like to save my changes to my local Git repository.
+{% hint style="info" %}
+I would like to save my changes to my local Git repository.
+{% endhint %}
 
 ```text
 git commit -m 'some message'
@@ -154,10 +154,10 @@ git commit -m 'some message'
 
 ### Commiting without any changes <a id="commiting-without-any-changes"></a>
 
-Why
-
+{% hint style="info" %}
 * I would like to add a commit to my local repository without adding any files
 * I would like to have a commit that can trigger a pipeline in the remote source control
+{% endhint %}
 
 ```text
 git commit --allow-empty 'some message'
@@ -167,9 +167,9 @@ git commit --allow-empty 'some message'
 
 ### Adding a file to a previous commit <a id="adding-a-file-to-a-previous-commit"></a>
 
-Why
-
-* I forgot to run `git add` on a file that should be in the previous commit.
+{% hint style="info" %}
+I forgot to run `git add` on a file that should be in the previous commit.
+{% endhint %}
 
 ```text
 # stage the missing file first
@@ -181,9 +181,9 @@ git commit --amend
 
 ### Squash commit <a id="squash-commit"></a>
 
-Why
-
-* I have made 5 commits and I would like to compress them into a single commit so my Git history is cleaner.
+{% hint style="info" %}
+I have made 5 commits and I would like to compress them into a single commit so my Git history is cleaner.
+{% endhint %}
 
 ```text
 # indicate `p` or `pick` for the head commit, and `s` or `squash` for the rest
