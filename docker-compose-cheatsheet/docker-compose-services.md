@@ -15,6 +15,33 @@ Some overarching rules for the following manifests are:
 
 ## Services
 
+### Alpine
+
+```yaml
+version: "3.7"
+services:
+  alpine:
+    # image reference: https://hub.docker.com/_/alpine
+    image: alpine:3.13.5
+    entrypoint: ["sleep", "1000000"]
+```
+
+### MongoDB
+
+```yaml
+version: "3.7"
+services:
+  mongodb:
+    # image reference: https://hub.docker.com/_/mongo
+    image: mongo:4.4.5-bionic
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: user
+      MONGO_INITDB_ROOT_PASSWORD: password
+    ports: ["27017:27017"]
+    volumes: # [] # uncomment this and comment below to remove persistence
+      - ./.data/mongodb/data/db:/data/db
+```
+
 ### MySQL
 
 ```yaml
@@ -29,7 +56,7 @@ services:
       MYSQL_DATABASE: database
     ports: ["3306:3306"]
     volumes: # [] # uncomment this and comment below to remove persistence
-      - ./.data/var/lib/mysql/data:/var/lib/mysql
+      - ./.data/mysql/var/lib/mysql/data:/var/lib/mysql
 ```
 
 ### PostgreSQL
@@ -46,7 +73,7 @@ services:
       POSTGRES_DB: database
     ports: ["5432:5432"]
     volumes: # [] # uncomment this and comment below to remove persistence
-      - ./.data/var/lib/postgresql/data:/var/lib/postgresql/data
+      - ./.data/postgresql/var/lib/postgresql/data:/var/lib/postgresql/data
 ```
 
 ### Redis
@@ -66,7 +93,7 @@ services:
       - ./.data/redis/data:/data
 ```
 
-#### Sample configuration file
+#### Sample Redis 6 configuration file
 
 ```text
 # security configurations as documented at https://redis.io/topics/security
@@ -81,6 +108,23 @@ user default off -@all
 # to generate the password, run `printf -- 'password' | sha256sum | cut -f 1 -d ' '`
 # the following password (after the '#' character) is the sha256 of "password" without the quotes
 user user on ~* +ping +@read +@write +@set +@list #5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+```
 
+### Rundeck
+
+```yaml
+version: "3.7"
+services:
+  rundeck:
+    # image reference: https://hub.docker.com/r/rundeck/rundeck
+    image: rundeck/rundeck:3.3.11
+    # environment reference: https://docs.rundeck.com/docs/administration/configuration/docker.html
+    environment:
+      RUNDECK_GRAILS_URL: http://localhost:4440
+      RUNDECK_SECURITY_HTTPHEADERS_ENABLED: "false"
+    ports: ["4440:4440"]
+    volumes: # [] # uncomment this and comment below to remove persistence
+      # you will have to run `sudo chmod 777 ./.data/rundeck/home/rundeck/server/data`
+      - ./.data/rundeck/home/rundeck/server/data:/home/rundeck/server/data
 ```
 
