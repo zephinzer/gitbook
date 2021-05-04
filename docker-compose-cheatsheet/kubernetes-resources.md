@@ -1,5 +1,18 @@
 # Kubernetes Resources
 
+## ConfigMap
+
+```yaml
+# replace __application__ with your application name
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: __application__
+data:
+  var1: value1
+  var2: value2
+```
+
 ## CronJob
 
 ```yaml
@@ -106,6 +119,20 @@ spec:
         - name: web
           containerPort: 80
           protocol: TCP
+```
+
+## Secret
+
+```yaml
+# replace __application__ with your application name
+apiVersion: v1
+kind: Secret
+metadata:
+  name: __application__
+type: Opaque
+data:
+  var1: d293IHlvdSBhY3R1YWxseSBkZWNvZGVkIHRoaXM=
+  var2: YSBjdXJpb3VzIG9uZSwgeW91IGFyZQ==
 ```
 
 ## Service
