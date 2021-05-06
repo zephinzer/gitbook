@@ -102,7 +102,7 @@ spec:
 ## Pod
 
 ```yaml
-# replace __application__ with your job name
+# replace __application__ with your pod name
 # replace __docker__/__image__:__tag__ with your image
 apiVersion: v1
 kind: Pod
@@ -119,6 +119,80 @@ spec:
         - name: web
           containerPort: 80
           protocol: TCP
+```
+
+## Role
+
+```yaml
+# replace __role__ with your role name
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: __role__
+rules:
+  - apiGroups: [""]
+    resources:
+      - configmaps
+      - endpoints
+      - namespaces
+      - nodes
+      - pods
+      - pods/logs
+      - replicationcontrollers
+      - serviceaccounts
+      - services
+    verbs: &readOnly
+      - get
+      - watch
+      - list
+  - apiGroups: [""]
+    resources:
+      - secrets
+    verbs: &listOnly
+      - list
+  - apiGroups: ["apps"]
+    resources:
+      - controllerrevisions
+      - deployments
+      - daemonsets
+      - replicasets
+      - statefulsets
+    verbs: *readOnly
+  - apiGroups: ["autoscaling"]
+    resources:
+      - autoscaling
+    verbs: *readOnly
+  - apiGroups: ["batch"]
+    resources:
+      - cronjobs
+      - jobs
+    verbs: *readOnly
+  - apiGroups: ["networking.k8s.io"]
+    resources:
+      - ingresses
+    verbs: *readOnly
+  - apiGroups: ["policy"]
+    resources:
+      - podsecuritypolicies
+    verbs: *readOnly
+```
+
+## RoleBinding
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: __role__
+subjects:
+  - kind: ServiceAccount
+    name: __sa__
+    namespace: default
+roleRef:
+  kind: Role
+  name: __role__
+  namespace: default
+  apiGroup: rbac.authorization.k8s.io
 ```
 
 ## Secret
