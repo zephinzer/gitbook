@@ -76,6 +76,22 @@ services:
       - ./.data/postgresql/var/lib/postgresql/data:/var/lib/postgresql/data
 ```
 
+### Nginx
+
+```yaml
+version: "3.7"
+services:
+  nginx:
+    # image reference: https://hub.docker.com/_/nginx
+    image: library/nginx:1.21.0-alpine
+    environment:
+      NGINX_HOST: localhost
+      NGINX_PORT: 3000
+    ports: ["3000:80"]
+    volumes:
+      - ./.data/html:/usr/share/nginx/html
+```
+
 ### Redis
 
 ```yaml
