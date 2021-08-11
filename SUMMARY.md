@@ -6,9 +6,18 @@
 
 * [Docker Compose Services](docker-compose-cheatsheet/docker-compose-services.md)
 * [Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)
-* [Git Commands](docker-compose-cheatsheet/git-commands.md)
-* [GPG Setup & Usage](docker-compose-cheatsheet/gpg-keys.md)
 * [Golang](docker-compose-cheatsheet/golang.md)
+
+## How-Tos
+
+* [Use Git](how-tos/git-commands.md)
+* [Use GPG keys](how-tos/gpg-keys.md)
+* [Use Digital Ocean](how-tos/use-digital-ocean.md)
+
+## About Me
+
+* [Want to work with me?](about-me/for-hire.md)
+* [How to work with me](about-me/how-to-work-with-me.md)
 
 ## Useful Tools
 
@@ -24,11 +33,6 @@
 * [Organization Development \(OD\)](coaching/organization-development-od.md)
 * [Speech Acts](coaching/speech-acts.md)
 * [Books & Other Resources](coaching/books-and-other-resources.md)
-
-## About Me
-
-* [Want to work with me?](about-me/for-hire.md)
-* [How to work with me](about-me/how-to-work-with-me.md)
 
 ## On Creating Software <a id="code"></a>
 

@@ -1,8 +1,12 @@
+---
+description: >-
+  This page provides YAML configurations for services I often use via a Docker
+  Compose file usually as part of bringing up a development enviornment.
+---
+
 # Docker Compose Services
 
 ## Overview
-
-This page provides YAML configurations for services I often use via a Docker Compose file usually as part of bringing up a development enviornment.
 
 Some overarching rules for the following manifests are:
 

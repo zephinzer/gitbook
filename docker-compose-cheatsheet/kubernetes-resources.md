@@ -1,3 +1,10 @@
+---
+description: >-
+  This page provides template Kubernetes resources that can be copied and pasted
+  into YAML files to be applied to a Kubernetes cluster using `kubectl apply -f
+  ...`
+---
+
 # Kubernetes Resources
 
 ## ConfigMap
