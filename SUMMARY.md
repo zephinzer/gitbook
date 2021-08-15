@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Hello](README.md)
+* [Tools and Useful Stuff](tools-and-useful-stuff.md)
 
 ## Cheatsheets <a id="docker-compose-cheatsheet"></a>
 
