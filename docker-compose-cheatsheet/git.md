@@ -36,6 +36,16 @@ git clone github.com/path/to/repo.git .
 
 ## Development
 
+### Adding an item to the Git repository
+
+```bash
+# add everything in the current directory
+git add .
+
+# add a specific file
+git add ./path/to/file
+```
+
 ### Remove an item from the Git cache
 
 ```bash
@@ -44,6 +54,25 @@ git rm --cache ./path/to/file
 
 # remove a directory
 git rm -r --cache ./path/to/directory
+```
+
+### Creating a new branch
+
+```bash
+git checkout -b branch-name
+```
+
+### Rebasing from master
+
+```bash
+git checkout target-branch && git rebase master
+```
+
+### Squashing commits
+
+```bash
+# squash ${N_COMMITS} commits into one commit
+git rebase -i HEAD~${N_COMMITS};
 ```
 
 ## Release
