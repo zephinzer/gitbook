@@ -8,6 +8,7 @@
 * [Docker Compose Services](docker-compose-cheatsheet/docker-compose-services.md)
 * [Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)
 * [Golang](docker-compose-cheatsheet/golang.md)
+* [Git](docker-compose-cheatsheet/git.md)
 
 ## How-Tos
 
