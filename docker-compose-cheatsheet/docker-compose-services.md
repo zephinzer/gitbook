@@ -26,7 +26,7 @@ version: "3.7"
 services:
   alpine:
     # image reference: https://hub.docker.com/_/alpine
-    image: alpine:3.13.5
+    image: library/alpine:3.13.5
     entrypoint: ["sleep", "1000000"]
 ```
 
@@ -37,8 +37,9 @@ version: "3.7"
 services:
   mongodb:
     # image reference: https://hub.docker.com/_/mongo
-    image: mongo:4.4.5-bionic
+    image: library/mongo:5.0.2
     environment:
+      MONGO_INITDB_DATABASE: database
       MONGO_INITDB_ROOT_USERNAME: user
       MONGO_INITDB_ROOT_PASSWORD: password
     ports: ["27017:27017"]
@@ -70,7 +71,7 @@ version: "3.7"
 services:
   postgresql:
     # image reference: https://hub.docker.com/_/postgres
-    image: postgres:13.2-alpine
+    image: library/postgres:13.3-alpine
     environment:
       POSTGRES_PASSWORD: password
       POSTGRES_USER: user
@@ -103,7 +104,7 @@ version: "3.7"
 services:
   redis:
     # image reference: https://hub.docker.com/_/redis
-    image: redis:6.2.2-alpine
+    image: library/redis:6.2.2-alpine
     command:
       - redis-server
       - /usr/local/etc/redis/redis.conf
