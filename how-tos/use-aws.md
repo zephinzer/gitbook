@@ -27,5 +27,14 @@ The following steps will get you from nothing with AWS to having an admin **IAM 
 
 ## Creating a sibling account
 
-The following steps assume that the intiial setup of an admin **IAM user** has been done and you are logged in as that IAM user.
+The following steps assume that the intiial setup of a **root user** has been done and you are logged in as that **root user** in the **root account**.
+
+1. Go to AWS Organizations
+2. Create a new organization so that it is a child of the Root account and a sibling of your management account
+3. Log out of your **root user**
+4. Go to the **AWS Console** and sing in using the **Root user**
+5. Enter the email of the sibling organization
+6. Click on **Forgot Password**
+7. Go to your email and click on the link to set the password of the **root user** of the sibling account
+8. Follow the steps in the first-time setup to setup the **root user** and the **IAM user** for this sibling account
 
