@@ -13,6 +13,7 @@
 
 ## How-Tos
 
+* [Use AWS](how-tos/use-aws.md)
 * [Use Git](how-tos/git-commands.md)
 * [Use GPG keys](how-tos/gpg-keys.md)
 * [Use Digital Ocean](how-tos/use-digital-ocean.md)
