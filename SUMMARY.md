@@ -13,6 +13,7 @@
 
 ## How-Tos
 
+* [Marie Kondo a Machine](how-tos/marie-kondo-a-machine.md)
 * [Use AWS](how-tos/use-aws.md)
 * [Use Git](how-tos/git-commands.md)
 * [Use GPG keys](how-tos/gpg-keys.md)
