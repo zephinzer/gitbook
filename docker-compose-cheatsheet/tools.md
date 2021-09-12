@@ -1,4 +1,4 @@
-# Tools
+# 🔨 Tools Quicklinks
 
 ## Collaboration
 
@@ -39,7 +39,7 @@
 | VSCodium | [https://vscodium.com/](https://vscodium.com/) |
 | WebStorm | [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/) |
 
-## Design
+## Design \(Prototyping\)
 
 | Name | URL |
 | :--- | :--- |
@@ -47,4 +47,15 @@
 | Figma | [https://www.figma.com/](https://www.figma.com/) |
 | Maze | [https://maze.co/](https://maze.co/) |
 | Sketch | [https://www.sketch.com/](https://www.sketch.com/) |
+
+## Design \(Visual\)
+
+| Name | URL |
+| :--- | :--- |
+| FlatIcon | [https://www.flaticon.com/](https://www.flaticon.com/) |
+| Sketch | [https://www.sketch.com/](https://www.sketch.com/) |
+| Undraw | [https://undraw.co/](https://undraw.co/) |
+| Unsplash | [https://unsplash.com/](https://unsplash.com/) |
+
+
 

@@ -1,4 +1,4 @@
-# Helm
+# ⛑ Helm
 
 ## Ensure service restarts on ConfigMap/Secret resource change
 

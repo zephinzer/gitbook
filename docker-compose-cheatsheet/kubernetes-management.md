@@ -1,4 +1,4 @@
-# Kubernetes Management
+# ☸️ Kubernetes Management
 
 ## Delete a Namespace stuck in `Terminating` state
 

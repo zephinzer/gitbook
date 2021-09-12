@@ -5,7 +5,7 @@ description: >-
   ...`
 ---
 
-# Kubernetes Resources
+# ☸️ Kubernetes Resources
 
 ## ConfigMap
 

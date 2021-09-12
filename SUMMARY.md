@@ -1,17 +1,17 @@
 # Table of contents
 
 * [Hello](README.md)
-* [Tools and Useful Stuff](tools-and-useful-stuff.md)
 
 ## Cheatsheets <a id="docker-compose-cheatsheet"></a>
 
-* [Docker Compose Services](docker-compose-cheatsheet/docker-compose-services.md)
-* [Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)
-* [Kubernetes Management](docker-compose-cheatsheet/kubernetes-management.md)
-* [Helm](docker-compose-cheatsheet/helm.md)
-* [Golang](docker-compose-cheatsheet/golang.md)
-* [Git](docker-compose-cheatsheet/git.md)
-* [Tools](docker-compose-cheatsheet/tools.md)
+* [🍂 Docker Compose Services](docker-compose-cheatsheet/docker-compose-services.md)
+* [🌿 Git](docker-compose-cheatsheet/git.md)
+* [▶️ Golang](docker-compose-cheatsheet/golang.md)
+* [⛑ Helm](docker-compose-cheatsheet/helm.md)
+* [☸️ Kubernetes Management](docker-compose-cheatsheet/kubernetes-management.md)
+* [☸️ Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)
+* [🔨 Tools Quicklinks](docker-compose-cheatsheet/tools.md)
+* [Tools and Useful Stuff](docker-compose-cheatsheet/tools-and-useful-stuff.md)
 
 ## How-Tos
 

@@ -4,7 +4,7 @@ description: >-
   Compose file usually as part of bringing up a development enviornment.
 ---
 
-# Docker Compose Services
+# 🍂 Docker Compose Services
 
 ## Overview
 
