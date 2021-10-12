@@ -15,4 +15,3 @@ Open `settings.json` and ensure the following setting exists:
   },
 # ...
 ```
-

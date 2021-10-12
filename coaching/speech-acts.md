@@ -32,19 +32,19 @@ The Speech Acts are categories of language which we use in day-to-day life wheth
   * Saying yes to a speaker: "the future you want to see will happen"
   * Saying no to a speaker: "the future you want to see will not happen"
 * Heuristics of a request
-  * Clearly identified speaker \(who is asking?\)
-  * Clearly identified listener \(who is being asked for something?\)
-  * Conditions of satisfaction \(what needs to be done by the listener?\)
-  * Time of fulfilment \(by when does this need to be done?\)
-  * Articulation of "for the sake of what" \(why does this need to be done?\)
-  * Resources \(does requestee have what they need?\)
-  * Committed listener \(is the listener receptive?\)
+  * Clearly identified speaker (who is asking?)
+  * Clearly identified listener (who is being asked for something?)
+  * Conditions of satisfaction (what needs to be done by the listener?)
+  * Time of fulfilment (by when does this need to be done?)
+  * Articulation of "for the sake of what" (why does this need to be done?)
+  * Resources (does requestee have what they need?)
+  * Committed listener (is the listener receptive?)
   * Disposition of speaker
   * Shared background of obviousness
 * Constructive outcomes of a request
-  * Yes \(I'll do it\)
-  * No \(I won't do it\)
-  * Commit-to-commit \(I'll let you know tomorrow\)
+  * Yes (I'll do it)
+  * No (I won't do it)
+  * Commit-to-commit (I'll let you know tomorrow)
 * Examples
   * Could you help me to take the water bottle?
   * Can you pass me the papers?
@@ -81,4 +81,3 @@ The Speech Acts are categories of language which we use in day-to-day life wheth
   * Yes
   * No
   * I will go to the gym with you
-

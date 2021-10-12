@@ -34,5 +34,3 @@
    1. I login to X
 5. I am logged in
 
-
-

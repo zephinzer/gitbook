@@ -2,7 +2,7 @@
 
 To begin software development, you'll need to install some software on your computer. This typically includes:
 
-1. Integrated Development Environment \(IDE\)/Code editor to write/edit code
+1. Integrated Development Environment (IDE)/Code editor to write/edit code
 2. Version control system client to make changes to codebases
 3. Authentication client tools to authenticate with code hosting services
 4. Runtime for the language to run code that you write
@@ -11,7 +11,7 @@ To begin software development, you'll need to install some software on your comp
 ## Integrated Development Environments
 
 1. [IntelliJ IDEA by JetBrains](https://www.jetbrains.com/idea/)
-2. [Visual Studio Code by Microsoft](https://code.visualstudio.com/)
+2. [Visual Studio Code by Microsoft](https://code.visualstudio.com)
 
 ## Version Control Systems
 
@@ -30,6 +30,4 @@ There are used for signing code commits
 ## Language Runtimes
 
 ## Windows Management Tools
-
-
 

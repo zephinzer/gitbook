@@ -1,2 +1,2 @@
-# Organization Development \(OD\)
+# Organization Development (OD)
 

@@ -12,42 +12,42 @@ description: >-
 
 ## Knowledge, Skills, and Abilities
 
-| Type | What | When |
-| :--- | :--- | :--- |
-| Software | Kubernetes | 2017-_present_ |
-| Software | Docker | 2017-_present_ |
-| Software | Gitlab | 2016-_present_ |
-| Platform | AWS | 2016-_present_ |
-| Platform | DigitalOcean | 2014-_present_ |
-| Programming Language | Javascript | 2012-_present_ |
-| Programming Language | Golang | 2018-_present_ |
-| SDLC | Agile Scrum | 2016-_present_ |
-| Soft Skills | Ontological Coaching | 2020-_present_ |
-| Programming Language | Typescript | 2018-2019 |
-| Programming Language | PHP | 2012-2015 |
-| Programming Language | C++ | 2012-2015 |
+| Type                 | What                 | When           |
+| -------------------- | -------------------- | -------------- |
+| Software             | Kubernetes           | 2017-_present_ |
+| Software             | Docker               | 2017-_present_ |
+| Software             | Gitlab               | 2016-_present_ |
+| Platform             | AWS                  | 2016-_present_ |
+| Platform             | DigitalOcean         | 2014-_present_ |
+| Programming Language | Javascript           | 2012-_present_ |
+| Programming Language | Golang               | 2018-_present_ |
+| SDLC                 | Agile Scrum          | 2016-_present_ |
+| Soft Skills          | Ontological Coaching | 2020-_present_ |
+| Programming Language | Typescript           | 2018-2019      |
+| Programming Language | PHP                  | 2012-2015      |
+| Programming Language | C++                  | 2012-2015      |
 
 ## Professionally
 
-| Years | Position | Company |
-| :--- | :--- | :--- |
-| 2014-2016 | Software Developer | [NUS HCI](for-hire.md#nus-human-computer-interaction-lab) |
-| 2015-2016 | Co-Founder/CTO | [Mooziq](for-hire.md#mooziq) |
-| 2016-2018 | Software Engineer | [GovTech](for-hire.md#govtech) |
-| 2018-2020 | DevOps Engineer | [GovTech](for-hire.md#govtech) |
-| 2020-_present_ | DevOps Engineer | [StashAway](for-hire.md#stashaway) |
+| Years          | Position           | Company                                                   |
+| -------------- | ------------------ | --------------------------------------------------------- |
+| 2014-2016      | Software Developer | [NUS HCI](for-hire.md#nus-human-computer-interaction-lab) |
+| 2015-2016      | Co-Founder/CTO     | [Mooziq](for-hire.md#mooziq)                              |
+| 2016-2018      | Software Engineer  | [GovTech](for-hire.md#govtech)                            |
+| 2018-2020      | DevOps Engineer    | [GovTech](for-hire.md#govtech)                            |
+| 2020-_present_ | DevOps Engineer    | [StashAway](for-hire.md#stashaway)                        |
 
-### StashAway \(Asia Wealth Platform Pte Ltd\)
+### StashAway (Asia Wealth Platform Pte Ltd)
 
 #### DevOps Engineer on Platforms Team
 
-### GovTech \(Government Technology Agency of Singapore\)
+### GovTech (Government Technology Agency of Singapore)
 
 #### DevOps Engineer on MyCareersFuture
 
 #### Software Engineer on Business Grants Portal
 
-### Mooziq \(Mooziq Pte Ltd\)
+### Mooziq (Mooziq Pte Ltd)
 
 #### CTO for the Mooziq Platform
 
@@ -63,15 +63,14 @@ description: >-
 
 ## Academically
 
-| School | Location | Qualification |
-| :--- | :--- | :--- |
-| St. Andrews Junior School | Singapore | PSLE |
-| St. Andrews Secondary School | Singapore | GCE 'O' Levels |
-| Catholic Junior College | Singapore | GCE 'A' Levels |
-| National University of Singapore - Faculty of Science | Singapore | - |
+| School                                                 | Location  | Qualification  |
+| ------------------------------------------------------ | --------- | -------------- |
+| St. Andrews Junior School                              | Singapore | PSLE           |
+| St. Andrews Secondary School                           | Singapore | GCE 'O' Levels |
+| Catholic Junior College                                | Singapore | GCE 'A' Levels |
+| National University of Singapore - Faculty of Science  | Singapore | -              |
 | National University of Singapore - School of Computing | Singapore | BSc. Computing |
 
 ## Contact
 
 [Create an issue on this repository](https://github.com/zephinzer/gitbook/issues/new) and we can discuss 😊
-

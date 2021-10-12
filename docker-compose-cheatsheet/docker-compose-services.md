@@ -116,7 +116,7 @@ services:
 
 #### Sample Redis 6 configuration file
 
-```text
+```
 # security configurations as documented at https://redis.io/topics/security
 bind 0.0.0.0
 rename-command CONFIG ""
@@ -148,4 +148,3 @@ services:
       # you will have to run `sudo chmod 777 ./.data/rundeck/home/rundeck/server/data`
       - ./.data/rundeck/home/rundeck/server/data:/home/rundeck/server/data
 ```
-

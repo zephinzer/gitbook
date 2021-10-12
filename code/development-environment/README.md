@@ -7,4 +7,3 @@ description: >-
 # Development Environments
 
 ## Integrated Development Environments
-

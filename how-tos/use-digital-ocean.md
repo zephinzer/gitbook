@@ -32,5 +32,3 @@ doctl k8s cluster kubeconfig save ${ID}
 
 
 
-
-

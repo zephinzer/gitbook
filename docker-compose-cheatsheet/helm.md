@@ -14,4 +14,3 @@ spec:
         checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
 # ...
 ```
-

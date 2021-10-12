@@ -13,14 +13,14 @@ A programming language is how we tell machines what we want it to do and choice 
 ## Websites
 
 * JavaScript for frontend
-* PHP \(Wordpress \| Drupal\) for backend
+* PHP (Wordpress | Drupal) for backend
 
 ## Software-as-a-Service
 
 * JavaScript/TypeScript for frontend
-* JavaScript/TypeScript \(Node\) for backend
-* Python \(Flask \| Django\) for backend
-* Ruby \(Rails\) for backend
+* JavaScript/TypeScript (Node) for backend
+* Python (Flask | Django) for backend
+* Ruby (Rails) for backend
 * Golang for backend
 * Java for backend
 
@@ -48,6 +48,4 @@ A programming language is how we tell machines what we want it to do and choice 
 * R
 * Matlab
 * Golang
-
-
 

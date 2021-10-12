@@ -7,6 +7,84 @@ description: >-
 
 # ☸️ Kubernetes Resources
 
+## ClusterRole
+
+```yaml
+# replace __name__ with your role name
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: __name__
+rules:
+  - apiGroups: [""]
+    resources:
+      - configmaps
+      - endpoints
+      - namespaces
+      - nodes
+      - pods
+      - pods/logs
+      - replicationcontrollers
+      - serviceaccounts
+      - services
+    verbs: &readOnly
+      - get
+      - watch
+      - list
+  - apiGroups: [""]
+    resources:
+      - secrets
+    verbs: &listOnly
+      - list
+  - apiGroups: ["apps"]
+    resources:
+      - controllerrevisions
+      - deployments
+      - daemonsets
+      - replicasets
+      - statefulsets
+    verbs: *readOnly
+  - apiGroups: ["autoscaling"]
+    resources:
+      - autoscaling
+    verbs: *readOnly
+  - apiGroups: ["batch"]
+    resources:
+      - cronjobs
+      - jobs
+    verbs: *readOnly
+  - apiGroups: ["networking.k8s.io"]
+    resources:
+      - ingresses
+    verbs: *readOnly
+  - apiGroups: ["policy"]
+    resources:
+      - podsecuritypolicies
+    verbs: *readOnly
+```
+
+## ClusterRoleBinding
+
+```yaml
+# replace __name__ with your binding name
+# replace __crname__ with your clusterrole's name
+# replace __saname__ with your serviceaccount's name
+# replace __sanamespace__ with your serviceaccount's namespace
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: __name__
+subjects:
+- kind: ServiceAccount
+  name: __saname__
+  namespace: __sanamespace__
+roleRef:
+  kind: ClusterRole
+  name: __crname__
+  apiGroup: rbac.authorization.k8s.io
+
+```
+
 ## ConfigMap
 
 ```yaml
@@ -233,3 +311,12 @@ spec:
       targetPort: 8000
 ```
 
+## Service Account
+
+```yaml
+# replace __name__ with your serviceaccount name
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: __name__
+```

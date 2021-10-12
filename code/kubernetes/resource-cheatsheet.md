@@ -124,4 +124,3 @@ spec:
       port: 8000
       targetPort: 8000
 ```
-
