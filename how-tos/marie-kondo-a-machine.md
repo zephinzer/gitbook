@@ -44,10 +44,13 @@ Run the following to clear space used by the Docker daemon:
 
 ```bash
 # remove dangling images
-docker prune images
+docker prune images;
+
+# removed unused containers
+docker prune containers;
 
 # remove unused volumes
-docker prune volumes
+docker prune volumes;
 ```
 
 ## From `journalctl`
@@ -67,3 +70,8 @@ Run the following to clear space from `/var/lib/snapd/cache/*`:
 sudo rm /var/lib/snapd/cache/*
 ```
 
+Run the following to clear space from `/var/lib/snapd/snaps/*`:
+
+```
+snap list --all | while read snapname ver rev trk pub notes; do if [[ $notes = *disabled* ]]; then snap remove "$snapname" --revision="$rev"; fi; done
+```
