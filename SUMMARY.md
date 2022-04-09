@@ -2,7 +2,7 @@
 
 * [Hello](README.md)
 
-## Cheatsheets <a id="docker-compose-cheatsheet"></a>
+## Cheatsheets <a href="#docker-compose-cheatsheet" id="docker-compose-cheatsheet"></a>
 
 * [🍂 Docker Compose Services](docker-compose-cheatsheet/docker-compose-services.md)
 * [🌿 Git](docker-compose-cheatsheet/git.md)
@@ -12,6 +12,7 @@
 * [☸️ Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)
 * [🔨 Tools Quicklinks](docker-compose-cheatsheet/tools.md)
 * [Tools and Useful Stuff](docker-compose-cheatsheet/tools-and-useful-stuff.md)
+* [Using Ubuntu](docker-compose-cheatsheet/using-ubuntu.md)
 
 ## How-Tos
 
@@ -30,26 +31,26 @@
 ## Useful Tools
 
 * [Collaboration](useful-tools/collaboration/README.md)
-  * [Miro](https://miro.com/)
+  * [Miro](https://miro.com)
 * [Documentation](useful-tools/documentation/README.md)
-  * [Gitbook](https://www.gitbook.com/)
+  * [Gitbook](https://www.gitbook.com)
   * [Notion](https://notion.so)
 
-## On Growing People <a id="coaching"></a>
+## On Growing People <a href="#coaching" id="coaching"></a>
 
 * [Ontological Coaching](coaching/overview.md)
-* [Organization Development \(OD\)](coaching/organization-development-od.md)
+* [Organization Development (OD)](coaching/organization-development-od.md)
 * [Speech Acts](coaching/speech-acts.md)
 * [Books & Other Resources](coaching/books-and-other-resources.md)
 
-## On Creating Software <a id="code"></a>
+## On Creating Software <a href="#code" id="code"></a>
 
 * [Product](code/product.md)
 * [Design](code/design.md)
 * [Development Environments](code/development-environment/README.md)
   * [Introduction](code/development-environment/introduction.md)
   * [Visual Studio Code/Codium](code/development-environment/visual-studio-code-codium.md)
-  * [Public Key Infrastructure \(PKI\) Setup & Usage](code/development-environment/public-key-infrastructure-pki.md)
+  * [Public Key Infrastructure (PKI) Setup & Usage](code/development-environment/public-key-infrastructure-pki.md)
 * [Patterns](code/patterns/README.md)
   * [API Authentication](code/patterns/api-authentication.md)
   * [User Authentication](code/patterns/user-authentication.md)
@@ -73,4 +74,3 @@
   * [2/ Setting up Kubernetes locally](code/kubernetes/2-setting-up-kubernetes-locally.md)
   * [3/ Handling long-running workloads](code/kubernetes/3-handling-long-running-workloads.md)
   * [4/ Handling run-once workloads](code/kubernetes/4-handling-run-once-workloads.md)
-
