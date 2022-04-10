@@ -3,7 +3,7 @@
 ## Delete a Namespace stuck in `Terminating` state
 
 {% hint style="info" %}
-Note that using `kubectl edit namespace $NAMESPACE` **WILL NOT WORK. **It has to go through `kubectl replace ...`
+Note that using `kubectl edit namespace $NAMESPACE` **WILL NOT WORK.** It has to go through `kubectl replace ...`
 {% endhint %}
 
 1. Identify the namespace that is stuck using `kubectl get namespaces` (this shall be `$NAMESPACE`)

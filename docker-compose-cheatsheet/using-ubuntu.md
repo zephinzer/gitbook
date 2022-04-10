@@ -1,8 +1,20 @@
-# Using Ubuntu
+---
+description: All about using
+---
+
+# 🟠 Using Ubuntu
 
 ## Initial hardening
 
-Majority of these steps were originally found on [this site](https://gofoss.net/server-hardening-advanced/#sysctl-network-security). It's pasted here for my convenience.
+References for some of these steps are at [this site](https://gofoss.net/server-hardening-advanced/#sysctl-network-security). It's pasted here for my convenience.
+
+### Encrypt your hard-drive
+
+:warning::warning::warning: **THIS IS ONLY DOABLE WHEN YOU INSTALL UBUNTU** :warning::warning::warning:
+
+On the installation page where you have to select your partition, opt to erase the disk and then select "**Use LVM...**" option and encrypt it using Linux Unified Key System (LUKS)
+
+![Source: https://jumpcloud.com/blog/how-to-enable-full-disk-encryption-on-an-ubuntu-20-04-desktop](<../.gitbook/assets/image (2).png>)
 
 ### Setup Antivirus
 

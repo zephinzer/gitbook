@@ -12,7 +12,7 @@
 * [☸️ Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)
 * [🔨 Tools Quicklinks](docker-compose-cheatsheet/tools.md)
 * [Tools and Useful Stuff](docker-compose-cheatsheet/tools-and-useful-stuff.md)
-* [Using Ubuntu](docker-compose-cheatsheet/using-ubuntu.md)
+* [🟠 Using Ubuntu](docker-compose-cheatsheet/using-ubuntu.md)
 
 ## How-Tos
 
