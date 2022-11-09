@@ -10,6 +10,7 @@
 * [⛑ Helm](docker-compose-cheatsheet/helm.md)
 * [☸️ Kubernetes Management](docker-compose-cheatsheet/kubernetes-management.md)
 * [☸️ Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)
+* [☸ Kubernetes Snippets](docker-compose-cheatsheet/kubernetes-snippets.md)
 * [🔨 Tools Quicklinks](docker-compose-cheatsheet/tools.md)
 * [Tools and Useful Stuff](docker-compose-cheatsheet/tools-and-useful-stuff.md)
 * [🟠 Using Ubuntu](docker-compose-cheatsheet/using-ubuntu.md)
@@ -31,9 +32,9 @@
 ## Useful Tools
 
 * [Collaboration](useful-tools/collaboration/README.md)
-  * [Miro](https://miro.com)
+  * [Miro](https://miro.com/)
 * [Documentation](useful-tools/documentation/README.md)
-  * [Gitbook](https://www.gitbook.com)
+  * [Gitbook](https://www.gitbook.com/)
   * [Notion](https://notion.so)
 
 ## On Growing People <a href="#coaching" id="coaching"></a>

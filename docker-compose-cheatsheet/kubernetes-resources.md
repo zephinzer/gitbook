@@ -10,11 +10,12 @@ description: >-
 ## ClusterRole
 
 ```yaml
-# replace __name__ with your role name
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: __name__
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
 rules:
   - apiGroups: [""]
     resources:
@@ -66,21 +67,19 @@ rules:
 ## ClusterRoleBinding
 
 ```yaml
-# replace __name__ with your binding name
-# replace __crname__ with your clusterrole's name
-# replace __saname__ with your serviceaccount's name
-# replace __sanamespace__ with your serviceaccount's namespace
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: __name__
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
 subjects:
 - kind: ServiceAccount
-  name: __saname__
-  namespace: __sanamespace__
+  name: {{ .Values.serviceAccount.name }}
+  namespace: {{ .Values.serviceAccount.namespace }}
 roleRef:
   kind: ClusterRole
-  name: __crname__
+  name: {{ .Values.clusterRole.name }}
   apiGroup: rbac.authorization.k8s.io
 
 ```
@@ -92,7 +91,9 @@ roleRef:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: __application__
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
 data:
   var1: value1
   var2: value2
@@ -106,7 +107,9 @@ data:
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: __application__
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
 spec:
   schedule: "*/1 * * * *"
   jobTemplate:
@@ -116,8 +119,8 @@ spec:
       template:
         spec:
           containers:
-          - name: hello
-            image: __docker__/__image__:__tag__
+          - name: {{ include "template.name" . }}
+            image: "{{ .Values.image.repository }}:{{ required "The image.tag must be specified to deploy this" .Values.image.tag }}"
             imagePullPolicy: IfNotPresent
             args:
             - /bin/sh
@@ -129,32 +132,37 @@ spec:
 ## Deployment
 
 ```yaml
-# replace __application__ with your application name
-# replace __docker__/__image__:__tag__ with your image
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: __application__
+  name: {{ include "template.name" . }}
   labels:
-    app: __application__
+    {{- include "template.labels" . | nindent 4 }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: __application__
+      {{- include "template.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       labels:
-        app: __application__
+        {{- include "template.labels" . | nindent 8 }}
     spec:
       containers:
-      - name: __application__
-        image: __docker__/__path__:__tag__
+      - name: {{ include "template.name" . }}
+        image: "{{ .Values.image.repository }}:{{ required "The image.tag must be specified to deploy this" .Values.image.tag }}"
         imagePullPolicy: Never
         ports:
         - name: http
-          containerPort: 8000
+          containerPort: {{ .Values.service.port }}
           protocol: TCP
+        envFrom:
+        - secretRef:
+            name: {{ include "template.fullname" . }}-env
+            optional: false
+        - configMapRef:
+            name: {{ include "template.fullname" . }}-env
+            optional: false
         resources:
           limits:
             memory: 25Mi
@@ -162,48 +170,125 @@ spec:
           requests:
             memory: 20Mi
             cpu: 50m
+        volumeMounts:
+        - name: dir-mount
+          mountPath: /path/to/dir/
+        - name: file-mount
+          mountPath: /path/to/file.ext
+          subPath: file.ext
+      volumes:
+      - name: dir-mount
+        secret:
+          defaultMode: 440
+          secretName: {{ include "template.fullname" . }}-dir
+      - name: file-mount
+        secret:
+          defaultMode: 440
+          secretName: {{ include "template.fullname" . }}-file
 ```
 
 ## Job
 
 ```yaml
-# replace __application__ with your job name
-# replace __docker__/__image__:__tag__ with your image
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: __application__
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
 spec:
+  completions: 1
+  parallelism: 1
+  backoffLimit: 3
   template:
     # This is the pod template
     spec:
       containers:
       - name: hello
-        image: __docker__/__image__:__tag__ 
+        image: "{{ .Values.image.repository }}:{{ required "The image.tag must be specified to deploy this" .Values.image.tag }}"
         command: ['sh', '-c', 'while :; do echo "Hello!"; sleep 5; done']
+        envFrom:
+          - secretRef:
+              name: {{ include "template.fullname" . }}-env
+              optional: false
+          - configMapRef:
+              name: {{ include "template.fullname" . }}-env
+              optional: false
       restartPolicy: OnFailure
+```
+
+## Ingress
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
+spec:
+  {{- if .Values.ingress.tls }}
+  tls:
+    {{- range .Values.ingress.tls }}
+    - hosts:
+        {{- range .hosts }}
+        - {{ . | quote }}
+        {{- end }}
+      secretName: {{ .secretName }}
+    {{- end }}
+  {{- end }}
+  rules:
+    {{- range .Values.ingress.hosts }}
+    - host: {{ .host | quote }}
+      http:
+        paths:
+          {{- range .paths }}
+          - path: {{ .path }}
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ .serviceName }}
+                port:
+                  number: {{ .servicePort }}
+          {{- end }}
+    {{- end }}
 ```
 
 ## Pod
 
 ```yaml
-# replace __application__ with your pod name
-# replace __docker__/__image__:__tag__ with your image
 apiVersion: v1
 kind: Pod
 metadata:
-  name: __application__
+  name: {{ include "template.name" . }}
   labels:
-    app: __application__
+    {{- include "template.labels" . | nindent 4 }}
 spec:
   containers:
     - name: web
-      image: __docker__/__image__:__tag__ 
+      image: "{{ .Values.image.repository }}:{{ required "The image.tag must be specified to deploy this" .Values.image.tag }}"
       command: ['sh', '-c', 'echo "Hello!" && sleep 3600']
       ports:
         - name: web
-          containerPort: 80
+          containerPort: {{ .Values.service.port }}
           protocol: TCP
+```
+
+## PodMonitor
+
+```yaml
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: {{ include "template.fullname" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "template.selectorLabels" . | nindent 6 }}
+  podMetricsEndpoints:
+  - port: http
 ```
 
 ## Role
@@ -213,7 +298,9 @@ spec:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  name: __role__
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
 rules:
   - apiGroups: [""]
     resources:
@@ -268,14 +355,16 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: __role__
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
 subjects:
   - kind: ServiceAccount
-    name: __sa__
-    namespace: default
+    name: {{ .Values.serviceAccount.name }}
+    namespace: {{ .Release.Namespace }}
 roleRef:
   kind: Role
-  name: __role__
+  name: {{ .Values.role.name }}
   namespace: default
   apiGroup: rbac.authorization.k8s.io
 ```
@@ -283,40 +372,92 @@ roleRef:
 ## Secret
 
 ```yaml
-# replace __application__ with your application name
 apiVersion: v1
 kind: Secret
 metadata:
-  name: __application__
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
 type: Opaque
+# either this ...
 data:
   var1: d293IHlvdSBhY3R1YWxseSBkZWNvZGVkIHRoaXM=
   var2: YSBjdXJpb3VzIG9uZSwgeW91IGFyZQ==
+# ... or this ...
+stringData:
+  var1: hello world
+  var2: "12345"
 ```
 
 ## Service
 
 ```yaml
-# replace __application__ with your service name
 apiVersion: v1
 kind: Service
 metadata:
-  name: __application__
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
 spec:
   selector:
-    app: __application__
+    {{- include "template.labels" . | nindent 4 }}
   ports:
     - protocol: TCP
-      port: 8000
-      targetPort: 8000
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.port }}
 ```
 
-## Service Account
+## ServiceAccount
 
 ```yaml
-# replace __name__ with your serviceaccount name
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: __name__
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
+```
+
+## ServiceMonitor
+
+```
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: {{ include "template.fullname" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
+spec:
+  endpoints:
+  - interval: 5s
+    port: http
+  selector:
+    matchLabels:
+      {{- include "template.selectorLabels" . | nindent 6 }}
+```
+
+## VirtualService
+
+```
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: {{ include "template.name" . }}
+  labels:
+    {{- include "template.labels" . | nindent 4 }}
+  annotations:
+    external-dns.alpha.kubernetes.io/target: "{{ .Values.loadBalancerUrl }}"
+spec:
+  hosts:
+    {{ .Values.hostUrls | toYaml | nindent 4 }}
+  gateways:
+    - istio-system/istio-ingress
+  tcp:
+  - match:
+    - port: {{ .Values.service.port }}
+    route:
+    - destination:
+        host: {{ include "template.name" . }}
+        port:
+          number: {{ .Values.service.port }}
 ```
