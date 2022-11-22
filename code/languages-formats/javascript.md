@@ -14,9 +14,9 @@ JavaScript is the colloquial name for the ECMAScript language specification and 
 
 ### Notable OSS projects
 
-1. [Strapi](https://strapi.io)
-2. [Ghost](https://ghost.org) 
-3. [Electron](https://www.electronjs.org)
+1. [Strapi](https://strapi.io/)
+2. [Ghost](https://ghost.org/)&#x20;
+3. [Electron](https://www.electronjs.org/)
 
 ## Dependency Management
 

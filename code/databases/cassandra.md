@@ -183,6 +183,6 @@ RROR [main] 2020-09-24 02:13:42,845 CassandraDaemon.java:759 - Cannot start node
 
 ## References
 
-1. [Apache Cassandra (open-source version)](https://cassandra.apache.org)
-2. [Datastax (commercial Cassandra)](https://www.datastax.com)
+1. [Apache Cassandra (open-source version)](https://cassandra.apache.org/)
+2. [Datastax (commercial Cassandra)](https://www.datastax.com/)
 3. [Cassandra Data Partitioning](https://www.instaclustr.com/cassandra-data-partitioning/)

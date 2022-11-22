@@ -6,7 +6,8 @@
 
 * [🍂 Docker Compose Services](docker-compose-cheatsheet/docker-compose-services.md)
 * [🌿 Git](docker-compose-cheatsheet/git.md)
-* [▶️ Golang](docker-compose-cheatsheet/golang.md)
+* [▶️ Golang](docker-compose-cheatsheet/golang/README.md)
+  * [Gotchas](docker-compose-cheatsheet/golang/gotchas.md)
 * [⛑ Helm](docker-compose-cheatsheet/helm.md)
 * [☸️ Kubernetes Management](docker-compose-cheatsheet/kubernetes-management.md)
 * [☸️ Kubernetes Resources](docker-compose-cheatsheet/kubernetes-resources.md)

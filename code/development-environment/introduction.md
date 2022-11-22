@@ -11,7 +11,7 @@ To begin software development, you'll need to install some software on your comp
 ## Integrated Development Environments
 
 1. [IntelliJ IDEA by JetBrains](https://www.jetbrains.com/idea/)
-2. [Visual Studio Code by Microsoft](https://code.visualstudio.com)
+2. [Visual Studio Code by Microsoft](https://code.visualstudio.com/)
 
 ## Version Control Systems
 

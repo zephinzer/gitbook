@@ -7,5 +7,5 @@
 ## Other useful tools
 
 * Helm
-* [K9s](https://k9scli.io)
+* [K9s](https://k9scli.io/)
 
