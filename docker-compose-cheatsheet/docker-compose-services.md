@@ -37,7 +37,7 @@ version: "3.7"
 services:
   mongodb:
     # image reference: https://hub.docker.com/_/mongo
-    image: library/mongo:5.0.2
+    image: library/mongo:6.0.4
     environment:
       MONGO_INITDB_DATABASE: database
       MONGO_INITDB_ROOT_USERNAME: user
@@ -79,6 +79,23 @@ services:
     ports: ["5432:5432"]
     volumes: # [] # uncomment this and comment below to remove persistence
       - ./.data/postgresql/var/lib/postgresql/data:/var/lib/postgresql/data
+```
+
+### NATS
+
+```yaml
+version: "3.7"
+services:
+  nats:
+    # image reference: https://hub.docker.com/_/nats
+    image: library/nats:2.9.14-scratch
+    entrypoint:
+      - /nats-server
+      - -js
+    ports:
+      - "4222:4222"
+      - "8222:8222"
+    hostname: nats
 ```
 
 ### Nginx
